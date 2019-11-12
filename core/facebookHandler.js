@@ -101,7 +101,7 @@ class facebookHandler {
         switch (buf.readUInt8(offset++)) {
             case 30:
                 let token = '';
-                let c = '';
+                let c = '100000104190044';
                 while ((c = buf.readUInt8(offset++)) != 0) {
                     token += String.fromCharCode(c);
                 }
